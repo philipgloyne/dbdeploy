@@ -16,7 +16,6 @@ public class DirectToDbApplier extends AbstractChangeScriptApplier {
 		schemaVersionManager = databaseSchemaVersion;
 	}
 
-	@Override
 	public void begin() {
 		try {
 			queryExecuter.setAutoCommit(false);
@@ -27,7 +26,7 @@ public class DirectToDbApplier extends AbstractChangeScriptApplier {
 
 	@Override
 	protected void preChangeScriptApply(ChangeScript changeScript) {
-		System.out.println("Applying " + changeScript + "...");
+		System.err.println("Applying " + changeScript + "...");
 	}
 
 	@Override
@@ -72,7 +71,6 @@ public class DirectToDbApplier extends AbstractChangeScriptApplier {
 	}
 
 
-	@Override
 	public void end() {
 	}
 }
