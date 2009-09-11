@@ -14,7 +14,6 @@ public class DbmsSyntaxFactory {
 		available.put("syb-ase", new SybAseDbmsSyntax());
 		available.put("mssql", new MsSqlDbmsSyntax());
 		available.put("mysql", new MySQLDbmsSyntax());
-		available.put("lucid", new LucidDbmsSyntax());
 	}
 
 	public DbmsSyntax createDbmsSyntax(String dbms) {

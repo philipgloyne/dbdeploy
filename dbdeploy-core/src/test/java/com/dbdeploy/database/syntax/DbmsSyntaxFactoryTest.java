@@ -16,7 +16,6 @@ public class DbmsSyntaxFactoryTest {
 		assertThat(factory.createDbmsSyntax("syb-ase"), is(SybAseDbmsSyntax.class));
 		assertThat(factory.createDbmsSyntax("mssql"), is(MsSqlDbmsSyntax.class));
 		assertThat(factory.createDbmsSyntax("mysql"), is(MySQLDbmsSyntax.class));
-		assertThat(factory.createDbmsSyntax("lucid"), is(LucidDbmsSyntax.class));
 	}
 
 	@Test
@@ -26,7 +25,7 @@ public class DbmsSyntaxFactoryTest {
 			fail("expected exception");
 		} catch (IllegalArgumentException ex) {
 			assertEquals(
-					"Supported dbms: hsql, lucid, mssql, mysql, ora, ora-sqlplus, syb-ase",
+					"Supported dbms: hsql, mssql, mysql, ora, ora-sqlplus, syb-ase",
 					ex.getMessage()
 			);
 		}

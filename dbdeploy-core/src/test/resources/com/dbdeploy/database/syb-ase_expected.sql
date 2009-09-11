@@ -2,7 +2,8 @@
 
 -- START CHANGE SCRIPT #1: 001_change.sql
 
-
+BEGIN TRANSACTION
+GO
 
 -- contents of change script 1
 
@@ -18,7 +19,8 @@ GO
 
 -- START CHANGE SCRIPT #2: 002_change.sql
 
-
+BEGIN TRANSACTION
+GO
 
 -- contents of change script 2
 
