@@ -14,4 +14,7 @@ public class SybAseDbmsSyntax extends DbmsSyntax {
 		return String.format("%nGO");
 	}
 
+    public String generateBeginTransaction() {
+        return "";
+    }
 }
