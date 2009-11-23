@@ -20,7 +20,7 @@ public class LucidDbmsSyntax extends DbmsSyntax {
 	
 	@Override
 	public String generateStatementDelimiter() {
-		return "";
+		return "\n;";
 	}
 
 }

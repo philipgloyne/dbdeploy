@@ -8,6 +8,7 @@
 
 INSERT INTO changelog (change_number, delta_set, complete_dt, applied_by, description)
  VALUES (1, 'null', CURRENT_TIMESTAMP, CURRENT_USER, '001_change.sql')
+;
 
 
 
@@ -22,6 +23,7 @@ INSERT INTO changelog (change_number, delta_set, complete_dt, applied_by, descri
 
 INSERT INTO changelog (change_number, delta_set, complete_dt, applied_by, description)
  VALUES (2, 'null', CURRENT_TIMESTAMP, CURRENT_USER, '002_change.sql')
+;
 
 
 
